@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Olá!!!</title>
+        
+        <script type="text/javascript" src="script.js"></script>
+        <style type="text/css">
+            .modal {
+                display: none;
+                position: absolute; 
+                left: 100px; 
+                top: 200px; 
+                background: lightgray; 
+                width: 500px; 
+                height: 300px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <button>Alerta</button>
+        <p>
+        ajkshdjawdiahwduiahwudh auwduwiuawhd uawhuida hwdoiuah wdua wduiawdiuaw hdiawdhaiuwdhauiwd haiuw dauw daouiwhd uaiwhdaiuwdh aiuwd uahw diahwd oaiwdh
+        </p>
+        <p>
+        ajkshdjawdiahwduiahwudh auwduwiuawhd uawhuida hwdoiuah wdua wduiawdiuaw hdiawdhaiuwdhauiwd haiuw dauw daouiwhd uaiwhdaiuwdh aiuwd uahw diahwd oaiwdh
+        </p>
+        <p>
+        ajkshdjawdiahwduiahwudh auwduwiuawhd uawhuida hwdoiuah wdua wduiawdiuaw hdiawdhaiuwdhauiwd haiuw dauw daouiwhd uaiwhdaiuwdh aiuwd uahw diahwd oaiwdh
+        </p>
+        <p>
+        ajkshdjawdiahwduiahwudh auwduwiuawhd uawhuida hwdoiuah wdua wduiawdiuaw hdiawdhaiuwdhauiwd haiuw dauw daouiwhd uaiwhdaiuwdh aiuwd uahw diahwd oaiwdh
+        </p>
+        <p>
+        ajkshdjawdiahwduiahwudh auwduwiuawhd uawhuida hwdoiuah wdua wduiawdiuaw hdiawdhaiuwdhauiwd haiuw dauw daouiwhd uaiwhdaiuwdh aiuwd uahw diahwd oaiwdh
+        </p>
+        <p>
+        ajkshdjawdiahwduiahwudh auwduwiuawhd uawhuida hwdoiuah wdua wduiawdiuaw hdiawdhaiuwdhauiwd haiuw dauw daouiwhd uaiwhdaiuwdh aiuwd uahw diahwd oaiwdh
+        </p>
+        <p>
+        ajkshdjawdiahwduiahwudh auwduwiuawhd uawhuida hwdoiuah wdua wduiawdiuaw hdiawdhaiuwdhauiwd haiuw dauw daouiwhd uaiwhdaiuwdh aiuwd uahw diahwd oaiwdh
+        </p>
+        <p>
+        ajkshdjawdiahwduiahwudh auwduwiuawhd uawhuida hwdoiuah wdua wduiawdiuaw hdiawdhaiuwdhauiwd haiuw dauw daouiwhd uaiwhdaiuwdh aiuwd uahw diahwd oaiwdh
+        </p>
+        
+        <div id="conteudo">
+        
+        </div>
+        
+        <div class="modal">
+            Meu Modal
+        </div>
+        
+        <script type="text/javascript">
+            
+            setTimeout(AbrirModal, 5000);
+            
+            function AbrirModal(){
+                document.querySelector(".modal").style.display = "block";
+            }
+            
+            var botoes = document.getElementsByTagName("button");
+            
+            botoes[0].addEventListener("click", MudarCorFundo);
+            
+            botoes[0].addEventListener("click", AdicionarTexto);
+            
+            function MudarCorFundo(){
+                document.getElementsByTagName("body")[0].style.backgroundColor = "#FF5555";
+            }
+            function AdicionarTexto(){
+                document.getElementById("conteudo").textinnerHTML = "Olá Mundo!";
+            }
+        </script>
+    </body>
+</html>

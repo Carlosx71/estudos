@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Olá!!!</title>
+        
+        <script type="text/javascript" src="script.js"></script>
+        
+        <script type="text/javascript">
+            //Javascript
+            //Processador/CPU: Fazer(Calculo).
+            //Memória: Armazenamento rápido - rápida - Não permante.
+            //HD: Armazenamento - lento - Permante.
+            
+            var nomeCompleto = "Elias \"Costa";
+            var frase = "Bem vindo " + nomeCompleto + ". Sua idade: " + (10 + 7);
+            //Concatenação = Junção.
+            
+            var resultado = 18+5;
+            var resultado2 = 18-5;
+            var resultado3 = 18*3;
+            var resultado4 = 18/3;
+            var resultado5 = 18/3*(4+3-5);
+            
+            var idade = 20;
+            
+            
+            //If = Se, ELSE = Caso constrario, 
+            // > < == >= <=
+            // & && | ||
+            
+            //frase = frase + "Outro";
+            //frase += "Outro";
+            
+            //if(idade <= 6 | sexo == "F")
+            
+            //Estrutura - Decisão 
+            if(idade >= 18)
+            {
+                frase = "Seu teste será mais avançado";
+            }else if(idade > 10 && idade < 18){
+                frase = "Seu teste será com dif. mediana";
+            }else{
+                frase = "Seu teste será com dif. baixa";
+            }
+            
+            sexo = "M";
+            switch(sexo){
+                case "M":
+                    frase = "Masculino";
+                    break;
+                case "F":
+                    frase = "Feminino";
+                    break;
+                default:
+                    break;
+            }
+            
+            
+            //Estrutura de Repetição
+            // Enquanto
+            
+            var numero = 0;
+            while(numero < 20){
+                //alert(numero);
+                numero = numero + 1;
+            }
+            
+            // i += 1; i += 2;
+            // i = i + 1; i++; i--; i = i + 1;
+            for(var i = 0; i < 10; i++){
+                //alert(i);
+            }
+            
+            var nome1 = "Elias";
+            var nome2 = "José";
+            var nome3 = "Filipe";
+            
+            
+            var nomes = ["Elias", "José", "Filipe"];
+            
+            alert(nomes[0] + " " + nomes[2]);
+            
+            for(var i = 0; i < nomes.length; i++){
+                alert(nomes[i]);
+            }
+            
+        </script>
+    </head>
+    <body>
+        Olá Mundo!
+        
+        <button onclick='javascript:alert(frase);'>Alerta</button>
+        
+    </body>
+</html>
