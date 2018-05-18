@@ -1,0 +1,35 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    //Fundo da bandeira
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 600, 400);
+
+    //Retangulo superior
+    pincel.fillStyle='yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 50);
+    pincel.lineTo(50, 200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+    //Retangulo inferior
+    pincel.fillStyle ='yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 350);
+    pincel.lineTo(50,200);
+    pincel.lineTo(550, 200);
+    pincel.fill();
+
+    //Circulo da bandeira
+    pincel.fillStyle = "darkblue";
+    pincel.beginPath();
+    pincel.arc(300, 200, 100, 0, 2 * Math.PI);
+    pincel.fill();
+
+
+</script>

@@ -1,0 +1,69 @@
+Quem trazer para os testes?
+
+Moderatos
+    Fazer perguntas
+    Fazer o usuario ficar confortavel
+
+    /*Que tal uma dificuldade um pouco maior?
+Imprima todos os números entre 30 e 40 (inclusive 30 e 40), 
+porém os números 33 e 37 não devem ser impressos! No final escreva a palavra "FIM". 
+Use o while para essa tarefa. DICA: o if pode ajudá-lo!
+
+Design Artifacts
+
+- Persona
+- SotoryBoard
+- Sketch
+- Wireframe
+- High Fidelity Proto
+
+Boas patricas
+
+- Explicar o teste
+- Responder perguntas
+- Observar e fazer anotações
+- conforme necessário - teste (faça perguntas)
+- agradeça seu participante
+
+Logistica
+
+- Onde?
+- Quanto?
+- Quantos participantes?
+- Design (Prototipo)
+
+O que testar?
+
+- Parte mais critica
+- O que tiver maiores problemas
+-
+OneSignal
+
+31 99286-1570
+
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var loginInformado = prompt("Informe seu login");
+    var senhaInformada = prompt("Informe sua senha");
+
+    var contador = 0;
+
+    while(contador == 3){
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+        contador = 3;
+    } else {
+
+        alert("Login inválido. Tente novamente");
+        contador ++;
+    }
+    }
+</script>
+
+N09-18-500010
+PLSVEM-18-500020
