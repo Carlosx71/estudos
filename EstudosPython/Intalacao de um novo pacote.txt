@@ -1,0 +1,7 @@
+Para instalar um novo pacote e necessario apontar o caminho.
+
+1 - Acesse o terminal como adm
+2 - Procure o atalho do IDLE do python e peca para ir ao local do arquivo
+3 - procure a pasta Scripts, no meu caso o caminho ficou assim (C:\Users\carlo\AppData\Local\Programs\Python\Python37\Scripts)
+4 - Va o caminho via terminal
+5 - No terminal, execute o comando 'pip install NOMEDOPACOTE'
