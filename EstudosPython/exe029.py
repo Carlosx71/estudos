@@ -17,7 +17,7 @@ if vel.isnumeric() == True:
             sleep(3)
             print('Aqui e o governo! A gente ta pra te ferrar kkkkkk')
             sleep(3)
-        print(f'Voce deve isso ai, trouxa: R$:{vel * 7.00}')
+        print(f'Voce deve isso ai, trouxa: R$:{(vel-80) * 7.00}')
     else:
         print('Deu sorte! Ta devendo nada nao')
 

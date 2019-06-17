@@ -1,7 +1,7 @@
-#-*-coding:utf8;-*-
+'''#-*-coding:utf8;-*-
 #qpy:3
 #qpy:console
-#200km 0.50 0.45
+#200km 0.50 0.45'''
 from time import sleep
 
 print('-=-'*14)
@@ -21,3 +21,6 @@ if km.isnumeric() == True:
         print (f'R$: {val}')
 else:
     print('Por favor, digite um numero valido')
+
+val = km * 0.50 if km <= 200 else km * 0.45
+print(f'Segunda maneira {val}')
