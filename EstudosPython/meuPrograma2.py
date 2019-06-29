@@ -36,6 +36,9 @@ while cont <= 8:
     cont = cont + 1
 print(f'|{colorBold["yellow"]}{"=-"*40}|{color["clear"]}')    
 
+print('Me deixe embaralhar o nome de voces')
+time.sleep(2)
+
 random.shuffle(listPart)
 
 contVs = 0
@@ -52,7 +55,8 @@ escolhido1 = random.choice(listPart)
 print(f'|{colorBold["yellow"]}{"=-"*40}|{color["clear"]}')  
 input(f'{colorBold["pink"]}Vai la! Joguem a proxima rodada...{color["clear"]}')
 print(f'|{colorBold["yellow"]}{"=-"*40}|{color["clear"]}')
-input(f'Estou torcendo por voce {escolhido1}')  
+input(f'{colorBold["green"]}Estou torcendo por voce {color["clear"]}{color["red"]}{escolhido1}{color["clear"]}')  
+time.sleep(2)
 print('Quem foram os vencedores?')
 
 del(listPart[0:])
@@ -62,7 +66,13 @@ while contSemi < 4:
     contSemi = contSemi + 1
     listPart.append(str(input(f'{colorBold["grey"]}{contSemi}º Semifinalista: {color["clear"]}')))
 
-
+print(f'|{colorBold["yellow"]}{"=-"*40}|{color["clear"]}')
+if str(escolhido1) in listPart[0:]:
+    print(f'Sabia que conseguiria {color["red"]}{escolhido1}{color["clear"]}')
+else:
+    print(f'Acho que fica pra proxima {color["red"]}{escolhido1}{color["clear"]} hahaha')
+print('Vou embaralhar novamente os seus nomes')
+time.sleep(3)
 random.shuffle(listPart)
 
 contVs3 = 0
@@ -81,11 +91,11 @@ print('Quem foram os vencedores das semifinais?')
 
 listFinal.append(str(input(f'{colorBold["blue"]}1º participante: {color["clear"]}')))
 listFinal.append(str(input(f'{colorBold["blue"]}2º participante: {color["clear"]}')))
-print(f'Boa sorte {listFinal[0]} e {listFinal[1]}!')
+print(f'Boa sorte {color["pink"]}{listFinal[0]}{color["clear"]} e {color["pink"]}{listFinal[1]}{color["clear"]}!')
 print(f'|{colorBold["yellow"]}{"=-"*40}|{color["clear"]}')
 
 escolhido = random.choice(listFinal)
-input(f'{colorBold["green"]} Eu pessoalmente estou torcendo por voce {escolhido}')
+input(f'{colorBold["green"]} Eu pessoalmente estou torcendo por voce {color["clear"]}{color["red"]}{escolhido}{color["clear"]}')
 print(f'|{colorBold["yellow"]}{"=-"*40}|{color["clear"]}')
 vencedor = input(f'{colorBold["blue"]} E ai? Quem ganhou? {color["clear"]}')
 
@@ -102,5 +112,5 @@ if vencNum.isnumeric():
 else:
     print(' Nao tente me enganar! Por isso, nao vai ganhar um chocolate')
 
-print('Voces sao incriveis! Obrigado por jogar!!!')
+print(' Voces sao incriveis! Obrigado por jogar!!!')
 print(f'|{colorBold["yellow"]}{"=-"*40}|{color["clear"]}')
