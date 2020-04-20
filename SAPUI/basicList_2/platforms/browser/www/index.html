@@ -36,7 +36,7 @@
                 "Place":"Tree"
             }]
             }
-            
+
             var oModel = new sap.ui.model.json.JSONModel();
 
             var oList = new sap.m.List({
@@ -53,13 +53,11 @@
                     title: "{Name}",
                     description: "{Place}"
                 })
-                    })
+                    });            
             
             oModel.setData(oData)
             oList.setModel(oModel)
 
-
-            //chama a model
             var oPage = new sap.m.Page({
                 title:"List Page",
                 content:[

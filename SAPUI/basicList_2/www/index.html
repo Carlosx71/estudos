@@ -36,52 +36,8 @@
                 "Place":"Tree"
             }]
             }
-            
+
             var oModel = new sap.ui.model.json.JSONModel();
-
-            var oCol1 = new sap.m.Column({
-                header:"Name"
-            });
-
-            var oCol2 = new sap.m.Column({
-                header:"Place"
-            });
-
-            var oCol3 = new sap.m.Column({
-                header:"Id"
-            });
-
-            var oTable = new sap.m.Table({
-                title:"Simple Table",
-                columns:[
-                    oCol1,
-                    oCol2,
-                    oCol3
-                ]
-            });
-
-            var oTemp = new sap.m.ColumnListItem({
-                cells:[
-                    new sap.m.Text({
-                        text:"{Name}"
-                    }),
-                    new sap.m.Text({
-                        text:"{Place}"
-                    }),
-                    new sap.m.Text({
-                        text:"{Id}"
-                    })
-                ]
-            });
-
-
-            oTable.bindItems({
-                path:"/names",
-                template: oTemp
-            })
-
-
-
 
             var oList = new sap.m.List({
                 headerText:"Animais",
@@ -97,13 +53,11 @@
                     title: "{Name}",
                     description: "{Place}"
                 })
-                    })
+                    });            
             
             oModel.setData(oData)
             oList.setModel(oModel)
 
-
-            //chama a model
             var oPage = new sap.m.Page({
                 title:"List Page",
                 content:[
