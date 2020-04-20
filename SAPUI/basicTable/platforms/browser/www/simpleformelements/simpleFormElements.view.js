@@ -59,7 +59,7 @@ sap.ui.jsview("simpleformelements.simpleFormElements", {
 
 
  		return new sap.m.Page({
-			title: "Title",
+			title: "Simple Animal List",
 			content: [
 				oTable
 			]
