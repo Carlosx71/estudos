@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Elements</title>
 	<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+	<link rel="stylesheet" href="css/new.css">
+
 
 	<script src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js" id="sap-ui-bootstrap"
 		data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal">
@@ -53,20 +55,21 @@
 							text: "Vbox Btn2"
 						})
 					]
-				}),
+				}).addStyleClass("vBoxForm"),
 				new sap.m.HBox({
 					items:[
 						new sap.m.Button({
 							
-							text: "Hbox Btn1"
+							text: "Hbox Btn1",
+							type: "Emphasized"
 						}),
 						new sap.m.Button({
 							text: "Hbox Btn2"
-						})
+						}).addStyleClass("newBtnGreen")
 					]
-				})
+				}).addStyleClass("hBoxForm"),
 			]
-		});
+		}).addStyleClass("newForm");
 		oSimpleForm.placeAt("content");
 	</script>
 

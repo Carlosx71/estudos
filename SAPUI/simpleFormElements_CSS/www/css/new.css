@@ -1,0 +1,35 @@
+.newForm {
+    width: 70% !important;
+    padding-left: 30% !important;
+    padding-top: 10% !important;
+}
+
+.hBoxForm {
+    padding-left: 34%;
+}
+
+.vBoxForm>.sapMFlexItemAlignAuto {
+    padding-left: 30%;
+}
+
+.sapUiRFLContainer {
+    width: 100% !important;
+}
+
+/*.newBtnGreen>.sapMFlexItem>.sapMBtnInner {
+    background: green;
+}*/
+
+.newBtnGreen>.sapMBtnInner {
+    background: green !important;
+}
+
+@media screen and (max-width:600px) {
+    .hBoxForm{
+        padding-left: 0%;
+    }
+}
+
+.vBoxForm{
+    padding-left: 18%;
+}
