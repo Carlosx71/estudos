@@ -51,7 +51,7 @@ sap.ui.controller("eventsdemo2.demo", {
 		console.log(sVal);
 		if(sVal !== undefined){
 				sap.ui.getCore().setModel(new sap.ui.model.json.JSONModel({
-					"data":"oi"
+					"data":sVal
 				}),"label") ;
         }
         app.to("iddemo2");
